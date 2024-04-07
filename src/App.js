@@ -3,19 +3,17 @@ import './App.css';
 import { useEffect, useRef, useState } from 'react';
 
 function App() {
-  var [rnum,setRnum] = useState();
+  var [count,setCount] = useState(0);
 
-  useRef()
     useEffect(()=>{
       setInterval(()=>{
-        var n = Math.random();
-        console.log(n)
-        setRnum(n)
+        setCount(count+1)
+        console.log(count)
       },1000)
     },[])
   return (
-    <div className='card'>
-     <h1>Random Number:{rnum}</h1>
+    <div className='card text-center'>
+     <h1>Count:{count}</h1>
     </div>
   );
 }
