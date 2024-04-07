@@ -1,25 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import { useEffect, useRef, useState } from 'react';
 
 function App() {
+  var [rnum,setRnum] = useState();
+
+  useRef()
+    useEffect(()=>{
+      setInterval(()=>{
+        var n = Math.random();
+        console.log(n)
+        setRnum(n)
+      },1000)
+    },[])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='card'>
+     <h1>Random Number:{rnum}</h1>
     </div>
   );
 }
-
 export default App;
