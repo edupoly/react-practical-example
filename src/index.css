@@ -1,0 +1,9 @@
+li{
+    list-style:none;
+}
+.thumbnail{
+    border:1px solid gray;
+    padding:4px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
