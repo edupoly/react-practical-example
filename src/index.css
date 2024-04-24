@@ -3,10 +3,17 @@ li{
 }
 .thumbnail{
     border:1px solid gray;
+    border-radius: 10px;
     padding:4px;
     aspect-ratio: 3/3;
-    object-fit: contain;
+    object-fit: cover;
 }
 ul i{
     padding:20px;
+    font-size: 1em;
+    color: gray;
+}
+h3{
+    display: inline-block;
+    text-transform: uppercase;
 }

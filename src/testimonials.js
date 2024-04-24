@@ -1,7 +1,7 @@
 export var reviews = [
     {
       id: 1,
-      name: 'Pritam Ahire',
+      name: 'Pritam',
       job: 'web developer',
       image:
         'https://media.licdn.com/dms/image/C5103AQEOJPrf_VFaXA/profile-displayphoto-shrink_800_800/0/1565340799903?e=2147483647&v=beta&t=yvERZWmYhY_7ez_4KmHhpXzoScWGRGLOdvECA2TKixo',
