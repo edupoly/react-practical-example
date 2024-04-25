@@ -46,7 +46,7 @@ function App() {
     setSec(0)
   }
   return (
-    <div>
+    <div className="w-50 text-center mx-auto m-5 border border-2 p-3">
       <h3>Timer</h3>
       <h1>{min}:{sec}</h1>
       <button onClick={()=>{startToggle()}}>{startFlag?'pause':'start'}</button>
