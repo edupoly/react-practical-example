@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useState,useRef } from "react";
 
-
 function App() {
   var [min,setMin] = useState(5)
   var [sec,setSec] = useState(0)
@@ -49,8 +48,8 @@ function App() {
     <div className="w-50 text-center mx-auto m-5 border border-2 p-3">
       <h3>Timer</h3>
       <h1>{min}:{sec}</h1>
-      <button onClick={()=>{startToggle()}}>{startFlag?'pause':'start'}</button>
-      <button onClick={()=>{resetTimer()}}>Reset</button>
+      <button class="btn btn-success" onClick={()=>{startToggle()}}>{startFlag?'Pause':'Start'}</button>
+      <button class="btn btn-warning" onClick={()=>{resetTimer()}}>Reset</button>
     </div>
   );
 }
