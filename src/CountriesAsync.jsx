@@ -1,10 +1,10 @@
 import React,{useEffect} from "react";
 function CountriesAsync() {
-    var [countries,setCountries] = React.useState();
+    var [countries,setCountries] = React.useState([]);
     var [isError,setError] = React.useState(false)
     async function getCountries(){
         try{
-            var res = await fetch("https://restcountries.com/v3/all")
+            var res = await fetch("https://restcountries.com/v3/alls")
             var data = await res.json();
             console.log(data)
             console.log(res)
@@ -14,10 +14,12 @@ function CountriesAsync() {
             }
             else{
                 setError(true)
+                console.log("error caught in try block")
             }
         }
         catch(err){
             console.log(err.message)
+            console.log("error caught in try block")
             setError(true)
         }
     }

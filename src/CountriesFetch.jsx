@@ -4,7 +4,7 @@ function CountriesFetch() {
     var [countries,setCountries] = React.useState();
     var [isError,setError] = React.useState(false)
     useEffect(()=>{
-        fetch("https://restcountries.com/v3/alls")
+        fetch("https://restcountries.com/v3/all")
         .then(res=>{
         console.log(res)
             if(res.ok){
