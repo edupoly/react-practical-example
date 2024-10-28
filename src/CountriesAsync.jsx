@@ -3,25 +3,25 @@ function CountriesAsync() {
     var [countries,setCountries] = React.useState([]);
     var [isError,setError] = React.useState(false)
     async function getCountries(){
-        try{
-            var res = await fetch("https://restcountries.com/v3/alls")
-            var data = await res.json();
-            console.log(data)
-            console.log(res)
-            if(res.ok){
-                setCountries(data)
-                setError(false)
-            }
-            else{
-                setError(true)
-                console.log("error caught in try block")
-            }
-        }
-        catch(err){
-            console.log(err.message)
-            console.log("error caught in try block")
-            setError(true)
-        }
+        // try{
+            var res = await fetch("https://restscountries.com/v3/alls")
+    //         var data = await res.json();
+    //         console.log(data)
+    //         console.log(res)
+    //         if(res.ok){
+    //             setCountries(data)
+    //             setError(false)
+    //         }
+    //         else{
+    //             setError(true)
+    //             console.log("error caught in try block")
+    //         }
+    //     }
+    //     catch(err){
+    //         console.log(err.message)
+    //         console.log("error caught in try block")
+    //         setError(true)
+    //     }
     }
     useEffect(()=>{
         getCountries();
