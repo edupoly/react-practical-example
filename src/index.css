@@ -1,0 +1,40 @@
+.entry{
+    font-family: sans-serif;
+    display: block;
+    animation-name: slideright;
+    animation-duration:  0.5s;
+}
+.exit{
+    animation:slideleft 1s both;
+}
+@keyframes zoomzoom {
+    from{
+        opacity:0.5;
+        transform: scale(20%);
+    }
+    to{
+        opacity:1;
+        transform: scale(100%);
+    }
+}
+@keyframes slideleft {
+    from{
+        opacity:1;
+        transform: translateX(0%);
+    }
+    to{
+        opacity:0;
+        transform: translateX(-50%);
+
+    }
+}
+@keyframes slideright {
+    from{
+        opacity:0;
+        transform: translateX(-50%);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0%);
+    }
+}
