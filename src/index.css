@@ -1,0 +1,26 @@
+.entry{
+    animation: slideRight 1s;
+}
+.exit{
+    animation:slideLeft 1s;
+}
+@keyframes slideRight {
+    from{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes slideLeft {
+    from{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    to{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
