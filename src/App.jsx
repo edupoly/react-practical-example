@@ -47,7 +47,7 @@ function App() {
   }
   return (
     <div className="w-50 text-center mx-auto m-5 border border-2 p-3">
-      <h3>Timer</h3>
+      <h3>Stopwatch</h3>
       <h1>{min}:{sec}</h1>
       <button className="btn btn-primary m-3" onClick={()=>{startToggle()}}>{startFlag?'Pause':'Start'}</button>
       <button className="btn btn-success m-3" onClick={()=>{resetTimer()}}>Reset</button>
