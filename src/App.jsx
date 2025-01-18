@@ -6,8 +6,8 @@ function App() {
   
   return (
     <div>
-      {/* <CountriesFetch></CountriesFetch> */}
-      <CountriesAsync></CountriesAsync>
+      <CountriesFetch></CountriesFetch>
+      {/* <CountriesAsync></CountriesAsync> */}
     </div>
   );
 }
