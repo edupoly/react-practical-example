@@ -10,7 +10,7 @@ function App() {
   }
   return (
     <div className="w-50 mx-auto m-5 border border-2 p-3 bg-white rounded-4">
-      <h1 className=" text-center">Tip Calculator</h1>
+      <h1 className=" text-center">Age Calculator</h1>
       <h3>Whats your Date Of Birth?</h3>
       <div class="form-floating mb-3">
         <input type="date" onChange={(e)=>{setdob(e.target.value)}} class="form-control" id="dob" placeholder="Rs.1000"/>
