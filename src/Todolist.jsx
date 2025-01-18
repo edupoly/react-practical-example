@@ -77,15 +77,15 @@ function Todolist() {
         }
   return (
     <div>
-        <h2>Todolist</h2>
-        <div className='d-flex p-2 m-2'>
-            <div id='pending' className='w-25 border border-2 rounded p-2 m-2 bg-danger text-light h-100'>
+        <h2 className='text-center'>Status Based Todolist</h2>
+        <div className='d-flex p-2 m-2 justify-content-center'>
+            <div id='pending' className=' border border-2 rounded p-2 m-2 bg-secondary-subtle text-danger h-100'>
                 <List filterStatus="pending" todos={todos} handleDragStart={handleDragStart} handleDrop={handleDrop}></List>
             </div>
-            <div id='doing' className='w-25 border border-2 rounded p-2 m-2 bg-primary text-light h-100'>
+            <div id='doing' className=' border border-2 rounded p-1 p-sm-2 m-1 m-sm-2 bg-primary-subtle text-primary h-100'>
                 <List filterStatus="doing" todos={todos} handleDragStart={handleDragStart} handleDrop={handleDrop}></List>
             </div>
-            <div id='done' className='w-25 border border-2 rounded p-2 m-2 bg-success text-light h-100'>
+            <div id='done' className=' border border-2 rounded p-2 m-2 bg-success-subtle text-success h-100'>
                 <List filterStatus="done" todos={todos} handleDragStart={handleDragStart} handleDrop={handleDrop}></List>
             </div>
         </div>
