@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Todo from './Todo';
 
 function Todolist() {
@@ -42,7 +42,6 @@ function Todolist() {
         })
     }
     function deleteTodo(id){
-        
         setTodos((prevTodos)=>{
             var temp = prevTodos.filter((todo)=>{
                 if(todo.id!==id){
@@ -52,11 +51,17 @@ function Todolist() {
             return temp
         })
     }
+    // useEffect(()=>{
+    //     console.log("Todolist mounted")
+    // },[])
+    // useEffect(()=>{
+    //     console.log("rendered every time todolist changes")
+    // })
   return (
-    <div>
+    <div className='border border-3 border-success m-2 p-3'>
         <h2>Todolist</h2>
         <div className='d-flex px-5'>
-            <input type="text" className='form-control' onChange={(e)=>{setNewTask(e.target.value)}}/>
+            <input type="text" className='form-control border border-success' onChange={(e)=>{setNewTask(e.target.value)}}/>
             <button onClick={()=>{addTodo()}} className='btn btn-success'>Add Todo</button>
         </div>
         <ul style={{listStyle:'none'}}>
